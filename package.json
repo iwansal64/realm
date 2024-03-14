@@ -10,8 +10,17 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.5.3",
     "@astrojs/check": "^0.5.9",
+    "@astrojs/react": "^3.1.0",
+    "@types/react": "^18.2.65",
+    "@types/react-dom": "^18.2.22",
+    "animejs": "^3.2.2",
+    "astro": "^4.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "typescript": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/animejs": "^3.1.12"
   }
 }

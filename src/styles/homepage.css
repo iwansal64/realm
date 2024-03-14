@@ -1,0 +1,30 @@
+div.first_background_wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 1;
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
+  transition-duration: 0.2s;
+}
+
+div.first_content_container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+div.first_content_container .first_content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: -moz-max-content;
+  width: max-content;
+  pointer-events: none;
+}
+div.first_content_container .first_content.active {
+  pointer-events: fill;
+}/*# sourceMappingURL=homepage.css.map */

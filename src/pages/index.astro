@@ -1,16 +1,24 @@
 ---
+import MainLayouts from "../layouts/MainLayout.astro";
+import "../styles/homepage.css";
 
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayouts title="Realm">
+	<section class="first_content_wrapper"></section>
+	<div class="first_background_wrapper">
+		<div class="first_content_container">
+			<div style={{opacity: 0}} class="first_content active" data-speed-in="250" data-speed-out="300" data-duration="2s">
+				<h1>Astro</h1>
+			</div>
+			<div style={{opacity: 0}} class="first_content" data-speed-in="250" data-speed-out="300" data-duration="2s">
+				<h1>Boy</h1>
+			</div>
+			<div style={{opacity: 0}} class="first_content" data-speed-in="350" data-speed-out="300" data-duration="3s">
+				<h1>One Day..</h1>
+				<p>in far far world</p>
+			</div>
+		</div>
+	</div>
+	<script src="../typescript/first-contents.ts" />
+</MainLayouts>
