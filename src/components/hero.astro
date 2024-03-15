@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets"
+import profile_picture from "../images/profile-picture.webp";
+
+---
+<section class="section hero">
+    <div class="hero_container">
+        <div class="profile_info">
+            <p class="greeting">Hello! i'm..</p>
+            <h1 class="profile_name">Ridwan Bagoes Setiawan</h1>
+            <p class="profile_description">I Love Coding!</p>
+            <button class="call_to_action">Find More About Me &rArr;</button>
+        </div>
+        <div class="profile_picture">
+            <Image src={profile_picture} alt="profile picture" width="160" class="profile_image"/>
+        </div>
+    </div>
+    <div class="decoration"></div>
+</section>

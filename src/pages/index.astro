@@ -1,34 +1,16 @@
 ---
 import MainLayouts from "../layouts/MainLayout.astro";
+import Intro from "../components/intro.astro";
+import Hero from "../components/hero.astro";
+import Showcase from "../components/showcase.astro";
 import "../styles/first_contents.css";
 import "../styles/hero_section.css";
 
 ---
 
 <MainLayouts title="Realm">
-	<section class="first_content_wrapper intro">
-		<div class="intro_background">
-			<div class="intro_content_container">
-				<div style={{opacity: 0}} class="first_content" data-speed-in="700" data-speed-out="1000" data-duration="2s">
-					<h1>Click To Next.</h1>
-				</div>
-				<div style={{opacity: 0}} class="first_content" data-speed-in="700" data-speed-out="1000" data-duration="2s">
-					<h1>Web Developers</h1>
-				</div>
-				<div style={{opacity: 0}} class="first_content" data-speed-in="700" data-speed-out="1000" data-duration="2s">
-					<h1>Algo Makers</h1>
-				</div>
-				<div style={{opacity: 0}} class="first_content" data-speed-in="2000" data-speed-out="1000" data-duration="3s">
-					<h2>Coding Lovers</h2>
-				</div>
-			</div>
-			<button class="skip_intro_button">Skip</button>
-		</div>
-	</section>
-	<section class="second_content_wrapper hero">
-		<div class="hero_background">
-			<h1>Ridwan Bagoes S</h1>
-		</div>
-	</section>
+	<Intro />
+	<Hero />
+	<Showcase />
 	<script src="../typescript/first-contents.ts" />
 </MainLayouts>

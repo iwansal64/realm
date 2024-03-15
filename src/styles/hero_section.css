@@ -1,5 +1,62 @@
-section.hero {
+.hero {
   background-color: #111;
   width: 100vw;
   height: 100vh;
+}
+
+.hero_container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+}
+.hero_container .profile_info {
+  position: absolute;
+  font-size: 1.75rem;
+  width: -moz-max-content;
+  width: max-content;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-weight: bolder;
+  z-index: 2;
+}
+@media (max-width: 860px) {
+  .hero_container .profile_info {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 518px) {
+  .hero_container .profile_info {
+    font-size: 0.85rem;
+  }
+}
+.hero_container .profile_info .greeting {
+  font-size: 2em;
+}
+.hero_container .profile_info .profile_name {
+  color: #70a;
+  font-size: 2.5em;
+}
+.hero_container .profile_info .profile_description {
+  color: #508;
+  font-size: 2em;
+}
+.hero_container .profile_info .call_to_action {
+  font-size: 1.25rem;
+  background-color: transparent;
+  border: 2px solid #305;
+  transition-duration: 0.15s;
+}
+.hero_container .profile_info .call_to_action:hover {
+  border-color: #509;
+  background-color: #509;
+}
+.hero_container .profile_picture {
+  position: relative;
+  left: 40px;
+  background-color: #305;
 }/*# sourceMappingURL=hero_section.css.map */

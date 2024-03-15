@@ -8,6 +8,7 @@
   height: 100vh;
   z-index: 20;
   transition-duration: 0.2s;
+  overflow: hidden;
 }
 
 .intro_content_container {

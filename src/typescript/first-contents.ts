@@ -1,12 +1,22 @@
 import anime from "animejs/lib/anime.es";
 
 const first_contents = Array.from(document.getElementsByClassName("first_content"));
-const first_background_wrapper = document.getElementsByClassName(
-    "intro_background"
-)[0] as HTMLDivElement;
+const intro_background = document.getElementsByClassName("intro_background")[0] as HTMLDivElement;
+const intro_content_container = document.getElementsByClassName("intro_content_container")[0] as HTMLDivElement;
 
 let current_index = 0;
 let timeline_done = false;
+
+function close_first_content() {
+    anime({
+        targets: intro_background,
+        width: 0,
+        easing: "linear",
+        duration: 1000
+    }).finished.then(() => {
+        intro_background.style.visibility = "collapse";
+    });
+}
 
 function next_first_content() {
     //? OPTIONS
@@ -80,30 +90,24 @@ function next_first_content() {
     if (current_index == first_contents.length + 1) {
         /// BACKGROUND FADE OUT
         setTimeout(() => {
-            anime({
-                targets: first_background_wrapper,
-                width: 0,
-                height: 0,
-                easing: "linear",
-                duration: 1500
-            });
+            close_first_content();
         }, background_fade_out_delay);
         return false;
     }
 
     current_index += 1;
-    console.log("1241");
     return true;
 }
 
 function skip_intro() {
-    console.log("WOWW");
-    while (next_first_content());
-    console.log("WOWW");
-
+    close_first_content();
 }
 
-first_background_wrapper.addEventListener("click", next_first_content);
+intro_content_container.addEventListener("click", (event) => {
+    if (event.target == intro_content_container) {
+        next_first_content();
+    }
+});
 
 /// FIRST ANIMATION
 next_first_content();
