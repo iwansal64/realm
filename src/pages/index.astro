@@ -1,24 +1,29 @@
 ---
 import MainLayouts from "../layouts/MainLayout.astro";
-import "../styles/homepage.css";
+import "../styles/first_contents.css";
 
 ---
 
 <MainLayouts title="Realm">
-	<section class="first_content_wrapper"></section>
-	<div class="first_background_wrapper">
-		<div class="first_content_container">
-			<div style={{opacity: 0}} class="first_content active" data-speed-in="250" data-speed-out="300" data-duration="2s">
-				<h1>Astro</h1>
-			</div>
-			<div style={{opacity: 0}} class="first_content" data-speed-in="250" data-speed-out="300" data-duration="2s">
-				<h1>Boy</h1>
-			</div>
-			<div style={{opacity: 0}} class="first_content" data-speed-in="350" data-speed-out="300" data-duration="3s">
-				<h1>One Day..</h1>
-				<p>in far far world</p>
+	<section class="first_content_wrapper">
+		<div class="first_background_wrapper">
+			<div class="first_content_container">
+				<div style={{opacity: 0}} class="first_content" data-speed-in="1000" data-speed-out="1000" data-duration="2s">
+					<h1>Astro</h1>
+				</div>
+				<div style={{opacity: 0}} class="first_content" data-speed-in="1000" data-speed-out="1000" data-duration="2s">
+					<h1>Powerful Web Framework</h1>
+				</div>
+				<div style={{opacity: 0}} class="first_content" data-speed-in="1000" data-speed-out="1000" data-duration="3s">
+					<h2>Fast</h2>
+				</div>
 			</div>
 		</div>
-	</div>
+	</section>
+	<section class="second_content_wrapper">
+		<div class="hero_background">
+			<h1>Ridwan Bagoes S</h1>
+		</div>
+	</section>
 	<script src="../typescript/first-contents.ts" />
 </MainLayouts>
