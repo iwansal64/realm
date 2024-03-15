@@ -1,8 +1,8 @@
-div.first_background_wrapper {
+.intro_background {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #103;
   opacity: 1;
   width: 100vw;
   height: 100vh;
@@ -10,25 +10,39 @@ div.first_background_wrapper {
   transition-duration: 0.2s;
 }
 
-div.first_content_container {
+.intro_content_container {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-div.first_content_container .first_content {
+.intro_content_container .first_content {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
   width: -moz-max-content;
   width: max-content;
   pointer-events: none;
   font-size: 2rem;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
-div.first_content_container .first_content.active {
-  pointer-events: fill;
+
+.skip_intro_button {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  padding: 5px 35px;
+  border: none;
+  border-radius: 10px;
+  background-color: #205;
+  transition-duration: 0.25s;
+}
+
+.skip_intro_button:hover {
+  background-color: #409;
 }/*# sourceMappingURL=first_contents.css.map */

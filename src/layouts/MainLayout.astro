@@ -28,10 +28,24 @@ const { title }  = Astro.props;
         font-family: calibri;
 		color: white;
 		user-select: none;
+		margin:0;
+		padding:0;
     }
 
+	html {
+		width: 100vw;
+		height: 100vh;
+	}
+	
 	body {
-		overflow: hidden auto;
-		background-color: #222;
+		overflow: hidden;
+		background-color: #40a;
+	}
+
+	button {
+		background-color: #40a;
+		border: none;
+		padding: 5px 15px;
+		cursor: pointer;
 	}
 </style>

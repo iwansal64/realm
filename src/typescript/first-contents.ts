@@ -1,28 +1,25 @@
-import type { AnimeInstance } from "animejs";
 import anime from "animejs/lib/anime.es";
 
 const first_contents = Array.from(document.getElementsByClassName("first_content"));
 const first_background_wrapper = document.getElementsByClassName(
-    "first_background_wrapper"
+    "intro_background"
 )[0] as HTMLDivElement;
 
 let current_index = 0;
 let timeline_done = false;
 
-first_background_wrapper.addEventListener("click", next_first_content);
 function next_first_content() {
     //? OPTIONS
     const easing_function = "easeInOutQuad";
-    const background_fade_out_delay = 500;
+    const background_fade_out_delay = 1000;
     const default_fade_in_duration = "1000";
     const default_fade_out_duration = "1000";
 
     if (current_index < first_contents.length + 2) {
         if (current_index > 0 && current_index < first_contents.length + 1) {
             /// SECOND FADE IN
-            const duration_out = Number.parseInt(
-                first_contents[current_index - 1].getAttribute("data-speed-out") ||
-                default_fade_in_duration
+            const duration_in = Number.parseInt(
+                first_contents[current_index - 1].getAttribute("data-speed-in") || default_fade_out_duration
             );
             anime.remove(first_contents[current_index - 1]);
 
@@ -30,7 +27,7 @@ function next_first_content() {
                 targets: first_contents[current_index - 1],
                 easing: easing_function,
                 delay: 0,
-                duration: duration_out,
+                duration: duration_in,
                 opacity: 1,
                 top: "50%",
             });
@@ -59,7 +56,7 @@ function next_first_content() {
         /// FIRST FADE IN
 
         const duration_in = Number.parseInt(
-            first_contents[current_index].getAttribute("data-speed-in") || default_fade_out_duration
+            first_contents[current_index - 1] ? first_contents[current_index - 1].getAttribute("data-speed-in") : default_fade_out_duration
         );
         anime
             .timeline({
@@ -87,13 +84,31 @@ function next_first_content() {
                 targets: first_background_wrapper,
                 width: 0,
                 height: 0,
-                easing: "linear"
+                easing: "linear",
+                duration: 1500
             });
         }, background_fade_out_delay);
+        return false;
     }
 
     current_index += 1;
+    console.log("1241");
+    return true;
 }
+
+function skip_intro() {
+    console.log("WOWW");
+    while (next_first_content());
+    console.log("WOWW");
+
+}
+
+first_background_wrapper.addEventListener("click", next_first_content);
 
 /// FIRST ANIMATION
 next_first_content();
+next_first_content();
+
+
+const skip_intro_button = document.getElementsByClassName("skip_intro_button")[0] as HTMLButtonElement;
+skip_intro_button.addEventListener("click", skip_intro);
