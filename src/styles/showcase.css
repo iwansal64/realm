@@ -1,0 +1,32 @@
+.statement {
+  text-align: center;
+}
+
+.project {
+  padding: 150px 0 0 0;
+  background-color: #010101;
+}
+
+.project_container {
+  margin-top: 50px;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 20px;
+}
+
+.project_content {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-auto-flow: row;
+  padding: 0 50px;
+}
+.project_content .right_side {
+  border: 3px solid #eee;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.project_content .white-br {
+  width: 90%;
+  height: 2px;
+  background-color: #eee;
+}/*# sourceMappingURL=showcase.css.map */

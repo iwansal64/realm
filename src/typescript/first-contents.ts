@@ -1,5 +1,7 @@
 import anime from "animejs/lib/anime.es";
 
+window.scroll({ top: 0, behavior: "smooth" });
+
 const first_contents = Array.from(document.getElementsByClassName("first_content"));
 const intro_background = document.getElementsByClassName("intro_background")[0] as HTMLDivElement;
 const intro_content_container = document.getElementsByClassName("intro_content_container")[0] as HTMLDivElement;
@@ -15,6 +17,7 @@ function close_first_content() {
         duration: 1000
     }).finished.then(() => {
         intro_background.style.visibility = "collapse";
+        document.body.style.overflow = "hidden auto";
     });
 }
 
@@ -99,10 +102,6 @@ function next_first_content() {
     return true;
 }
 
-function skip_intro() {
-    close_first_content();
-}
-
 intro_content_container.addEventListener("click", (event) => {
     if (event.target == intro_content_container) {
         next_first_content();
@@ -110,9 +109,10 @@ intro_content_container.addEventListener("click", (event) => {
 });
 
 /// FIRST ANIMATION
+document.body.style.overflow = "hidden";
 next_first_content();
 next_first_content();
 
 
 const skip_intro_button = document.getElementsByClassName("skip_intro_button")[0] as HTMLButtonElement;
-skip_intro_button.addEventListener("click", skip_intro);
+skip_intro_button.addEventListener("click", close_first_content);

@@ -1,9 +1,35 @@
 ---
+import { Image } from "astro:assets";
+import { projects } from "../typescript/data.ts";
+import "../styles/showcase.css";
 
 ---
 
-<section class="section showcase">
-    <div class="showcase_container">
-        
+<section class="section project">
+	<p class="statement">I make some website project to improve my coding skill</p>
+    <div class="project_container">
+        {projects.map((project) => (
+            <div class="project_content">
+                <div class="left_side">
+                    <h1 class="project_title">{project.name}</h1>
+                    <div class="white-br"></div>
+                    <div class="techstack">
+                        <ol>
+                            {project.techstack.map((value) => (
+                                <li>{value}</li>
+                            ))}
+                        </ol>
+                    </div>
+                    <p class="project_description">
+                        {project.desc}
+                    </p>
+                </div>
+                <div class="right_side">
+                    <a href="/projects/mitra_check">
+                        <Image src={project.image_metadata} alt={project.image_alt} fetchpriority="low" height="350" />
+                    </a>
+                </div>
+            </div>
+        ))}
     </div>
 </section>

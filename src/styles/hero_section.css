@@ -1,7 +1,18 @@
 .hero {
   background-color: #111;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 100px);
+}
+.hero .decoration {
+  width: 100vw;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #111;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 0;
 }
 
 .hero_container {
@@ -11,6 +22,7 @@
   transform: translate(-50%, -50%);
   width: -moz-max-content;
   width: max-content;
+  z-index: 1;
   display: flex;
 }
 .hero_container .profile_info {
