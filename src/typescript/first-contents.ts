@@ -8,17 +8,23 @@ const intro_content_container = document.getElementsByClassName("intro_content_c
 
 let current_index = 0;
 let timeline_done = false;
+let closed = false;
 
 function close_first_content() {
-    anime({
-        targets: intro_background,
-        width: 0,
-        easing: "linear",
-        duration: 1000
-    }).finished.then(() => {
-        intro_background.style.visibility = "collapse";
-        document.body.style.overflow = "hidden auto";
-    });
+    if (!closed) {
+        skip_intro_button.disabled = true;
+        anime({
+            targets: intro_background,
+            width: 0,
+            easing: "easeInOutQuad",
+            duration: (1000 * (window.innerWidth / 500))
+        }).finished.then(() => {
+            intro_background.style.visibility = "collapse";
+            document.body.style.overflow = "hidden auto";
+            (document.getElementsByTagName("html")[0] as HTMLHtmlElement).style.overflow = "hidden auto";
+        });
+        closed = true;
+    }
 }
 
 function next_first_content() {
@@ -110,6 +116,7 @@ intro_content_container.addEventListener("click", (event) => {
 
 /// FIRST ANIMATION
 document.body.style.overflow = "hidden";
+(document.getElementsByTagName("html")[0] as HTMLHtmlElement).style.overflow = "hidden";
 next_first_content();
 next_first_content();
 

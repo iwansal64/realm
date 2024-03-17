@@ -2,9 +2,10 @@ import MyContents_Image from "../images/projects/My Contents.jpg";
 import DeviceMonitoringSystem_Image from "../images/projects/Device Monitoring System.jpg";
 import MitraCheck_Image from "../images/projects/Mitra Check.jpg";
 
-export const projects: { name: string, techstack: string[], desc: string, image_metadata: ImageMetadata, image_alt: string; }[] = [
+export const projects: { name: string, url: string, techstack: string[], desc: string, image_metadata: ImageMetadata, image_alt: string; }[] = [
     {
         name: "My Content",
+        url: "my_content",
         techstack: [
             "Next.JS",
             "Anime.JS",
@@ -16,19 +17,21 @@ export const projects: { name: string, techstack: string[], desc: string, image_
         image_alt: "My Contents Image"
     },
     {
-        name: "Device Monitoring System",
+        name: "Device Monitoring",
+        url: "device_monitoring",
         techstack: [
             "Next.JS",
             "MongoDB",
             "React",
             "TypeScript"
         ],
-        desc: "A website that can monitoring some devices easily through internet",
+        desc: "A website that can monitoring some devices at once easily through internet",
         image_metadata: DeviceMonitoringSystem_Image,
         image_alt: "Device Monitoring System Image"
     },
     {
         name: "Mitra Check",
+        url: "mitra_check",
         techstack: [
             "Next.JS",
             "MongoDB",

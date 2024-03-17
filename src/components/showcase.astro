@@ -1,7 +1,6 @@
 ---
 import { Image } from "astro:assets";
 import { projects } from "../typescript/data.ts";
-import "../styles/showcase.css";
 
 ---
 
@@ -13,21 +12,15 @@ import "../styles/showcase.css";
                 <div class="left_side">
                     <h1 class="project_title">{project.name}</h1>
                     <div class="white-br"></div>
-                    <div class="techstack">
-                        <ol>
-                            {project.techstack.map((value) => (
-                                <li>{value}</li>
-                            ))}
-                        </ol>
-                    </div>
                     <p class="project_description">
                         {project.desc}
                     </p>
                 </div>
                 <div class="right_side">
-                    <a href="/projects/mitra_check">
+                    <a href={`/projects/${project.url}`} class="project_link">
                         <Image src={project.image_metadata} alt={project.image_alt} fetchpriority="low" height="350" />
                     </a>
+                    <span>Click To Learn More..</span>
                 </div>
             </div>
         ))}

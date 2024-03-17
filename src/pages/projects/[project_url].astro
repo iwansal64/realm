@@ -1,0 +1,29 @@
+---
+import type { GetStaticPaths } from "astro";
+import MainLayout from "../../layouts/MainLayout.astro";
+import { projects } from "../../typescript/data";
+
+export const getStaticPaths = (() => {
+    
+    // return [{
+    //     params: {
+    //         project_name: "mitra_check"
+    //     }
+    // }];
+
+    return projects.map((project) => (
+        {
+            params: {
+                project_url: project.url
+            }
+        }
+    ))
+    
+}) satisfies GetStaticPaths;
+
+const { project_url } = Astro.params;
+---
+
+<MainLayout title={"Project Name : "+project_url}>
+    
+</MainLayout>
