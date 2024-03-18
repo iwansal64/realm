@@ -16,9 +16,9 @@ import { projects } from "../typescript/data.ts";
                         {project.desc}
                     </p>
                 </div>
-                <div class="right_side">
+                <div class="image_border">
                     <a href={`/projects/${project.url}`} class="project_link">
-                        <Image src={project.image_metadata} alt={project.image_alt} fetchpriority="low" height="350" />
+                        <Image src={project.main_image} alt={project.image_alt} fetchpriority="low" height="350" />
                     </a>
                     <span>Click To Learn More..</span>
                 </div>

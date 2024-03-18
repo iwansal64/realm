@@ -1,15 +1,15 @@
 ---
 import type { GetStaticPaths } from "astro";
 import MainLayout from "../../layouts/MainLayout.astro";
+import Footer from "../../components/footer.astro";
 import { projects } from "../../typescript/data";
+import { Image } from "astro:assets";
+import "../../styles/project_url.css";
+import "../../styles/image_border.css";
+import "../../styles/white_br.css";
+import "../../styles/footer.css";
 
 export const getStaticPaths = (() => {
-    
-    // return [{
-    //     params: {
-    //         project_name: "mitra_check"
-    //     }
-    // }];
 
     return projects.map((project) => (
         {
@@ -22,8 +22,70 @@ export const getStaticPaths = (() => {
 }) satisfies GetStaticPaths;
 
 const { project_url } = Astro.params;
+
+const project = projects.filter((data) => 
+    (data.url == project_url)
+)[0]
+
 ---
 
 <MainLayout title={"Project Name : "+project_url}>
-    
+    <div class="main_wrapper">
+        <div class="upper_layer">
+            <div class="project_info">
+                <h1 class="name">{project.name}</h1>
+                <p class="full_desc">{project.full_desc}</p>
+            </div>
+            <div class="project_details">
+                <div class="white_br" />
+                <div class="project_details_container">
+                    <div class="tech_stack">
+                        <h3>Tech Stack</h3>
+                        {project.techstack.map((technology, index) => (
+                            <>{(index==0?"":", ")+technology}</>
+                        ))}
+                    </div>
+                    <div class="time">
+                        <h3>Time</h3>
+                        <p>{project.time}</p>
+                    </div>
+                    <div class="year">
+                        <h3>Year</h3>
+                        <p>{project.start_year}</p>
+                    </div>
+                    <div class="tools">
+                        <h3>Tools</h3>
+                        {project.tools.map((tool, index) => (
+                            <>{(index==0?"":", ")+tool}</>
+                        ))}
+                    </div>
+                    <div class="core_features">
+                        <h3>Core Features</h3>
+                        {project.core_features.map((feature, index) => (
+                            <>{(index==0?"":", ")+feature}</>
+                        ))}
+                    </div>
+                </div>
+                <div class="white_br" />
+            </div>
+            <div class="project_image">
+                <div class="image_border">
+                    <Image src={project.main_image} alt={project.image_alt} fetchpriority="high" height={500}/>
+                </div>
+            </div>
+        </div>
+        <div class="lower_layer">
+            <div class="project_images">
+                {project.additional_images.map(([alt_image, image]) => (
+                    <figure>
+                        <div class="image_border">
+                            <Image src={image} alt={alt_image} fetchpriority="low" height={400} />
+                        </div>
+                        <figcaption>{alt_image}</figcaption>
+                    </figure>
+                ))}
+            </div>
+        </div>
+    </div>
+    <Footer />
 </MainLayout>

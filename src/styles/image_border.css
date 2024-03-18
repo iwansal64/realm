@@ -1,0 +1,8 @@
+.image_border {
+  position: relative;
+  border: 3px solid #eee;
+  border-radius: 15px;
+  overflow: hidden;
+  width: -moz-fit-content;
+  width: fit-content;
+}/*# sourceMappingURL=image_border.css.map */

@@ -28,19 +28,6 @@
     grid-template-rows: 1fr max-content;
   }
 }
-.project_content .right_side {
-  position: relative;
-  border: 3px solid #eee;
-  border-radius: 15px;
-  overflow: hidden;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.project_content .white-br {
-  width: 100%;
-  height: 2px;
-  background-color: #eee;
-}
 .project_content span {
   position: absolute;
   left: 50%;
