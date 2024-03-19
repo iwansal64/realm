@@ -113,6 +113,11 @@
   margin: 100px 0;
   padding: 0 200px;
 }
+@media (max-width: 500px) {
+  .lower_layer {
+    padding: 0 20px;
+  }
+}
 
 .project_images {
   display: grid;
@@ -131,6 +136,11 @@
   .project_images {
     grid-template-columns: repeat(2, max-content);
     gap: 2px;
+  }
+}
+@media (max-width: 500px) {
+  .project_images {
+    grid-template-columns: 1fr;
   }
 }
 .project_images figcaption {

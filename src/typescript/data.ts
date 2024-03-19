@@ -87,7 +87,7 @@ export const projects: {
                 "Thunder Client",
                 "MongoDB Compass"
             ],
-            additional_images: [["/", DeviceMonitoringSystem_Image_1], ["Device Monitoring System Image 2", DeviceMonitoringSystem_Image_2], ["Device Monitoring System Image 3", DeviceMonitoringSystem_Image_3], ["Device Monitoring System Image 4", DeviceMonitoringSystem_Image_4]]
+            additional_images: [["/", DeviceMonitoringSystem_Image_1], ["/add", DeviceMonitoringSystem_Image_2], ["/add", DeviceMonitoringSystem_Image_3], ["/device/[device_id]", DeviceMonitoringSystem_Image_4]]
         },
         {
             name: "Mitra Check",
@@ -118,7 +118,7 @@ export const projects: {
                 "Lighthouse",
                 "Web Vitals Chrome Extension"
             ],
-            additional_images: [["Mitra Check Image 1", MitraCheck_Image_1], ["Mitra Check Image 2", MitraCheck_Image_2], ["Mitra Check Image 3", MitraCheck_Image_3], ["Mitra Check Image 4", MitraCheck_Image_4]]
+            additional_images: [["/dashboard", MitraCheck_Image_1], ["/dashboard", MitraCheck_Image_2], ["/student/[student_id]", MitraCheck_Image_3], ["/student/[student_id]", MitraCheck_Image_4]]
         }
     ];
 

@@ -2,11 +2,13 @@
 import type { GetStaticPaths } from "astro";
 import MainLayout from "../../layouts/MainLayout.astro";
 import Footer from "../../components/footer.astro";
+import Home from "../../components/home.astro";
 import { projects } from "../../typescript/data";
 import { Image } from "astro:assets";
 import "../../styles/project_url.css";
 import "../../styles/image_border.css";
 import "../../styles/white_br.css";
+import "../../styles/home.css";
 
 export const getStaticPaths = (() => {
 
@@ -29,6 +31,7 @@ const project = projects.filter((data) =>
 ---
 
 <MainLayout title={"Project Name : "+project_url}>
+    <Home />
     <div class="main_wrapper">
         <div class="upper_layer">
             <div class="project_info">
