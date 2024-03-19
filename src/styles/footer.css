@@ -10,9 +10,37 @@ section.footer div.links {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 0 0 0 20px;
   border-radius: 30px 0 0 30px;
   gap: 20px;
+}
+section.footer div.links a.link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #eee;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 15px;
+  transition-duration: 0.25s;
+  background-color: #eee;
+}
+section.footer div.links a.link > p {
+  color: #222;
+}
+@media (max-width: 1000px) {
+  section.footer div.links a.link > p {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  section.footer div.links a.link {
+    padding: 5px 10px;
+  }
+}
+section.footer div.links a.link:hover {
+  background-color: #aaa;
 }
 section.footer h1 {
   font-size: 2rem;
@@ -21,14 +49,8 @@ section.footer h1 {
   justify-content: center;
   align-items: center;
 }
-section.footer a {
-  border: 2px solid #eee;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 15px;
-  transition-duration: 0.25s;
-}
-section.footer a:hover {
-  background-color: #eee;
-  color: #222;
+@media (max-width: 600px) {
+  section.footer h1 {
+    display: none;
+  }
 }/*# sourceMappingURL=footer.css.map */

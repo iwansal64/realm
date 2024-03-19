@@ -121,3 +121,37 @@ export const projects: {
             additional_images: [["Mitra Check Image 1", MitraCheck_Image_1], ["Mitra Check Image 2", MitraCheck_Image_2], ["Mitra Check Image 3", MitraCheck_Image_3], ["Mitra Check Image 4", MitraCheck_Image_4]]
         }
     ];
+
+
+
+import Github_Icon from "../images/icons/github.png";
+import LinkedIn_Icon from "../images/icons/linkedin.png";
+import Instagram_Icon from "../images/icons/instagram.png";
+import StackOverflow_Icon from "../images/icons/stackoverflow.png";
+
+export const links: {
+    name: string,
+    url: string,
+    icon: ImageMetadata;
+}[] = [
+        {
+            name: "Github",
+            url: "https://github.com/iwansal64",
+            icon: Github_Icon
+        },
+        {
+            name: "StackOverflow",
+            url: "https://stackoverflow.com/users/17246477/iwantz",
+            icon: StackOverflow_Icon
+        },
+        {
+            name: "Instagram",
+            url: "https://www.instagram.com/iwan_wkwkw/",
+            icon: Instagram_Icon
+        },
+        {
+            name: "LinkedIn",
+            url: "https://www.linkedin.com/in/ridwan-setiawan-7477672ba/",
+            icon: LinkedIn_Icon
+        }
+    ];

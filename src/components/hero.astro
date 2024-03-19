@@ -6,13 +6,13 @@ import profile_picture from "../images/profile-picture.webp";
 <section class="section hero">
     <div class="hero_container">
         <div class="profile_info">
-            <p class="greeting">Hello! i'm..</p>
-            <h1 class="profile_name">Ridwan Bagoes Setiawan</h1>
-            <p class="profile_description">I Love Coding!</p>
-            <button class="call_to_action">Find More About Me &rArr;</button>
+            <p class="smooth greeting" data-smooth-delay="100">Hello! i'm..</p>
+            <h1 class="smooth profile_name" data-smooth-delay="350">Ridwan Bagoes Setiawan</h1>
+            <p class="smooth profile_description" data-smooth-delay="600">I Love Coding!</p>
+            <button class="smooth call_to_action" data-smooth-delay="1000">Find More About Me &rArr;</button>
         </div>
         <div class="profile_picture">
-            <Image src={profile_picture} alt="profile picture" width="160" class="profile_image"/>
+            <Image src={profile_picture} alt="profile picture" width="160" class="smooth profile_image" data-smooth-delay="500" />
         </div>
     </div>
     <div class="decoration"></div>

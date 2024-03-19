@@ -7,7 +7,6 @@ import { Image } from "astro:assets";
 import "../../styles/project_url.css";
 import "../../styles/image_border.css";
 import "../../styles/white_br.css";
-import "../../styles/footer.css";
 
 export const getStaticPaths = (() => {
 
@@ -33,42 +32,42 @@ const project = projects.filter((data) =>
     <div class="main_wrapper">
         <div class="upper_layer">
             <div class="project_info">
-                <h1 class="name">{project.name}</h1>
-                <p class="full_desc">{project.full_desc}</p>
+                <h1 class="name smooth" data-smooth-delay="200">{project.name}</h1>
+                <p class="full_desc smooth" data-smooth-delay="400">{project.full_desc}</p>
             </div>
             <div class="project_details">
-                <div class="white_br" />
+                <div class="white_br smooth" data-smooth-delay="200" />
                 <div class="project_details_container">
-                    <div class="tech_stack">
+                    <div class="tech_stack smooth" data-smooth-delay="200">
                         <h3>Tech Stack</h3>
                         {project.techstack.map((technology, index) => (
                             <>{(index==0?"":", ")+technology}</>
                         ))}
                     </div>
-                    <div class="time">
+                    <div class="time smooth" data-smooth-delay="400">
                         <h3>Time</h3>
                         <p>{project.time}</p>
                     </div>
-                    <div class="year">
+                    <div class="year smooth" data-smooth-delay="600">
                         <h3>Year</h3>
                         <p>{project.start_year}</p>
                     </div>
-                    <div class="tools">
+                    <div class="tools smooth" data-smooth-delay="350">
                         <h3>Tools</h3>
                         {project.tools.map((tool, index) => (
                             <>{(index==0?"":", ")+tool}</>
                         ))}
                     </div>
-                    <div class="core_features">
+                    <div class="core_features smooth" data-smooth-delay="500">
                         <h3>Core Features</h3>
                         {project.core_features.map((feature, index) => (
                             <>{(index==0?"":", ")+feature}</>
                         ))}
                     </div>
                 </div>
-                <div class="white_br" />
+                <div class="white_br smooth" data-smooth-delay="200" />
             </div>
-            <div class="project_image">
+            <div class="project_image smooth" data-smooth-delay="200">
                 <div class="image_border">
                     <Image src={project.main_image} alt={project.image_alt} fetchpriority="high" height={500}/>
                 </div>
@@ -76,8 +75,8 @@ const project = projects.filter((data) =>
         </div>
         <div class="lower_layer">
             <div class="project_images">
-                {project.additional_images.map(([alt_image, image]) => (
-                    <figure>
+                {project.additional_images.map(([alt_image, image], index) => (
+                    <figure class="smooth" data-smooth-delay={(index%2)*200}>
                         <div class="image_border">
                             <Image src={image} alt={alt_image} fetchpriority="low" height={400} />
                         </div>

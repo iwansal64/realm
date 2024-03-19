@@ -27,18 +27,21 @@
 }
 .hero_container .profile_info {
   position: absolute;
-  font-size: 1.75rem;
-  width: -moz-max-content;
-  width: max-content;
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
-  font-weight: light;
+  font-size: 1.75rem;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: lighter;
   z-index: 2;
 }
-@media (max-width: 860px) {
+@media (max-width: 970px) {
   .hero_container .profile_info {
-    font-size: 1.25rem;
+    padding: 0 200px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    font-size: 1.15rem;
   }
 }
 @media (max-width: 518px) {
@@ -63,7 +66,7 @@
   font-size: 1.25rem;
   background-color: transparent;
   border: 2px solid #305;
-  transition-duration: 0.15s;
+  transition: 0.15s background-color, 1.25s opacity, 1.25s transform;
 }
 .hero_container .profile_info .call_to_action:hover {
   border-color: #509;

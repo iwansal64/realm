@@ -1,13 +1,20 @@
 ---
+import { links } from "../typescript/data";
+import "../styles/footer.css";
+import { Image } from "astro:assets";
 
 ---
 
 <section class="footer">
     <h1>Ridwan Bagoes Setiawan</h1>
     <div class="links">
-        <a href="https://github.com/iwansal64">GitHub</a>
-        <a href="https://www.instagram.com/iwan_wkwkw/">Instagram</a>
-        <a href="https://stackoverflow.com/users/17246477/iwantz">Stack Overflow</a>
-        <a href="https://www.linkedin.com/in/ridwan-setiawan-7477672ba/">LinkedIn</a>
+        {
+            links.map((link, index) => (
+                <a href={link.url} class="link smooth" data-smooth-delay={300*index}>
+                    <p>{link.name}</p>
+                    <Image src={link.icon} alt={link.name + " icon"} width={50} height={50} />
+                </a>
+            ))
+        }
     </div>
 </section>

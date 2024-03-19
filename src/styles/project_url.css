@@ -17,9 +17,16 @@
   grid-template-rows: max-content 1fr;
   place-items: center;
   grid-template-areas: "info image" "details details";
+  padding: 0 200px;
 }
-@media (max-width: 520px) {
+@media (max-width: 1050px) {
   .upper_layer {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 550px) {
+  .upper_layer {
+    padding: 0;
     grid-template-areas: "info" "image" "details";
     grid-template-columns: 1fr;
   }
@@ -104,6 +111,7 @@
 
 .lower_layer {
   margin: 100px 0;
+  padding: 0 200px;
 }
 
 .project_images {
@@ -124,6 +132,9 @@
     grid-template-columns: repeat(2, max-content);
     gap: 2px;
   }
+}
+.project_images figcaption {
+  text-align: center;
 }
 
 .footer {
