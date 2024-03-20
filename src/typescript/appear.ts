@@ -1,6 +1,7 @@
 const smooth_elements = Array.from(document.getElementsByClassName("smooth"));
 const observer = new IntersectionObserver(trigger_smooth_element, {
-    threshold: 0.5
+    rootMargin: "0px",
+    threshold: 0.15
 });
 
 smooth_elements.forEach((smooth_element) => {

@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+import down_arrow_image from "../images/down-arrow.png";
 
 ---
 
@@ -9,5 +11,10 @@
         <p class="smooth"><u>I like to make some projects for improving my programming skill</u>. I always searching time for learn something new about technology. When i go to school, when i go to my hometown, even when i go to mall or supermarket. I always want to improve my programming skills everywhere with whether using smartphone or laptop.</p>
         <p class="smooth"><u>My dream is become a FullStack Developer</u> because of that, there's no a single day in my life without learning programming. That's my <b>determination</b>. Even though sometimes it's frustrating, stressing, and makes me sick, I still never give up. I believe that there's myself in future that saying to me "You can do this! You're on the right path."</p>
         <p class="quote smooth"><q>It's hard, but it's worth it.</q></p>
+    </div>
+    <div class="down_arrow">
+        <a href="#showcase">
+            <Image src={down_arrow_image} alt="down arrow" width={30} />
+        </a>
     </div>
 </section>
