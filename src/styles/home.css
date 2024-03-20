@@ -1,15 +1,15 @@
 .home {
   position: relative;
-  margin: 20px auto 0 auto;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100vw;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   border: 2px solid white;
-  border-radius: 25px;
-  padding: 10px 20px;
+  border-width: 0 0 2px 0;
+  padding: 20px 0;
   transition: 0.25s background-color, 2s transform, 2s opacity !important;
 }
 .home > * {

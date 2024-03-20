@@ -13,6 +13,11 @@
   grid-auto-flow: row;
   gap: 20px;
 }
+@media (max-width: 600px) {
+  .project_container {
+    gap: 80px;
+  }
+}
 
 .project_content {
   display: grid;

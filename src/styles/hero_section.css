@@ -14,6 +14,12 @@
   transform: translateX(-50%) translateY(-50%);
   z-index: 0;
 }
+.hero .down_arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+}
 
 .hero_container {
   position: relative;
@@ -51,25 +57,29 @@
 }
 .hero_container .profile_info .greeting {
   font-size: 2em;
+  color: #f0f;
 }
 .hero_container .profile_info .profile_name {
-  color: #70a;
+  color: #eee;
   font-size: 2.5em;
   font-weight: 700;
 }
 .hero_container .profile_info .profile_description {
-  color: #508;
+  color: #eee;
   font-size: 1.5em;
 }
 .hero_container .profile_info .call_to_action {
   margin-top: 20px;
   font-size: 1.25rem;
-  background-color: transparent;
-  border: 2px solid #305;
+  background-color: #305;
+  border: 2px solid #509;
   transition: 0.15s background-color, 1.25s opacity, 1.25s transform;
+  padding: 5px;
+}
+.hero_container .profile_info .call_to_action a {
+  text-decoration: none;
 }
 .hero_container .profile_info .call_to_action:hover {
-  border-color: #509;
   background-color: #509;
 }
 .hero_container .profile_picture {
