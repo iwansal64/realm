@@ -1,0 +1,18 @@
+section.about {
+  padding: 100px 200px 50px 200px;
+  background-color: #050505;
+}
+@media (max-width: 570px) {
+  section.about {
+    padding: 100px 40px 50px 40px;
+  }
+}
+section.about h1 {
+  font-size: 2.5rem;
+}
+section.about p {
+  margin-top: 20px;
+}
+section.about p b {
+  font-weight: bolder;
+}/*# sourceMappingURL=about.css.map */

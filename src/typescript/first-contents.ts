@@ -7,7 +7,6 @@ const intro_background = document.getElementsByClassName("intro_background")[0] 
 const intro_content_container = document.getElementsByClassName("intro_content_container")[0] as HTMLDivElement;
 
 let current_index = 0;
-let timeline_done = false;
 let closed = false;
 
 function close_first_content() {

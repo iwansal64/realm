@@ -137,6 +137,9 @@
     grid-template-columns: repeat(2, max-content);
     gap: 2px;
   }
+  .project_images figcaption {
+    font-size: 0.8rem;
+  }
 }
 @media (max-width: 500px) {
   .project_images {
