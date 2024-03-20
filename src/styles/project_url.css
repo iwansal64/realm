@@ -152,4 +152,26 @@
 
 .footer {
   background-color: #102 !important;
+}
+
+.back-to-home {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 40px;
+}
+.back-to-home > a {
+  text-align: center;
+  border: 2px solid #eee;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition-duration: 0.15s;
+}
+
+.back-to-home:hover > a {
+  background-color: #eee;
+  color: #111;
 }/*# sourceMappingURL=project_url.css.map */
