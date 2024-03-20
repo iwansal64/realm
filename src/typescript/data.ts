@@ -55,9 +55,9 @@ export const projects: {
             time: "14 Days",
             tools: [
                 "VS Code",
-                "Chrome Inspector",
-                "Thunder Client",
-                "MongoDB Compass"
+                "Chrome",
+                "MongoDB Compass",
+                "Lighthouse",
             ],
             additional_images: [["(home) /", MyContents_Image_1], ["/friends", MyContents_Image_2], ["/user/[user_id]", MyContents_Image_3], ["/post/[post_id]", MyContents_Image_4]]
         },
@@ -71,7 +71,7 @@ export const projects: {
                 "TypeScript"
             ],
             desc: "A website that can monitoring some devices at once easily through internet",
-            full_desc: "Device Monitoring System. Website for monitoring devices through network. Because it connected to my local network i added wemos d1 r2 that can send data through api so that you can control LED through internet. Btw, it's my first website built with Next.JS",
+            full_desc: "Device Monitoring System. Website for monitoring devices through network. Because it connected to my local network i added wemos d1 r2 that can send data through API so that you can control LED through internet. It's my first website built with Next.JS",
             main_image: DeviceMonitoringSystem_Image,
             image_alt: "Device Monitoring System Image",
             core_features: [
@@ -83,8 +83,7 @@ export const projects: {
             time: "15 Days",
             tools: [
                 "VS Code",
-                "Chrome Inspector",
-                "Thunder Client",
+                "Chrome",
                 "MongoDB Compass"
             ],
             additional_images: [["/", DeviceMonitoringSystem_Image_1], ["/add", DeviceMonitoringSystem_Image_2], ["/add", DeviceMonitoringSystem_Image_3], ["/device/[device_id]", DeviceMonitoringSystem_Image_4]]
@@ -100,7 +99,7 @@ export const projects: {
                 "Prisma"
             ],
             desc: "Mitra Check is a website that i built for Mitra Industri Vocational Highschool. It's a presency monitoring website that track students presency",
-            full_desc: "A website that i build for school. It's a students attendance monitoring website that i built with Next.JS + MongoDB + Prisma. It has some features that help tracking students like seeing who are presence/absence to the class, seeing how many presence a student has in one week. And it's integrated with webhooks that connected to my another project called online presency device that can detects and reads an id card and update a student data on database that match the id card.",
+            full_desc: "A website that i build for school. It's a students attendance monitoring website that i built with Next.JS + MongoDB + Prisma. It has some features that help tracking students like seeing who are presence/absence to the class, seeing how many presence a student has in one week. And it's integrated with webhooks that connected to my another project called online presency device that can detects and reads an id card and update that student data on database that match the id card.",
             main_image: MitraCheck_Image,
             image_alt: "Mitra Check Image",
             core_features: [
@@ -112,10 +111,8 @@ export const projects: {
             time: "7 Days",
             tools: [
                 "VS Code",
-                "Chrome Inspector",
-                "Thunder Client",
+                "Chrome",
                 "MongoDB Compass",
-                "Lighthouse",
                 "Web Vitals Chrome Extension"
             ],
             additional_images: [["/dashboard", MitraCheck_Image_1], ["/dashboard", MitraCheck_Image_2], ["/student/[student_id]", MitraCheck_Image_3], ["/student/[student_id]", MitraCheck_Image_4]]

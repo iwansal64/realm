@@ -1,10 +1,20 @@
 section.about {
-  padding: 100px 200px 50px 200px;
+  padding: 150px 400px 150px 400px;
   background-color: #050505;
 }
-@media (max-width: 570px) {
+@media (max-width: 1080px) {
   section.about {
-    padding: 100px 40px 50px 40px;
+    padding: 150px 300px 150px 300px;
+  }
+}
+@media (max-width: 670px) {
+  section.about {
+    padding: 100px 150px 100px 150px;
+  }
+}
+@media (max-width: 450px) {
+  section.about {
+    padding: 100px 50px 100px 50px;
   }
 }
 section.about h1 {
@@ -15,4 +25,8 @@ section.about p {
 }
 section.about p b {
   font-weight: bolder;
+}
+section.about .quote {
+  margin-top: 40px;
+  font-size: 1.8rem;
 }/*# sourceMappingURL=about.css.map */
