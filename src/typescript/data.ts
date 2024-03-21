@@ -29,7 +29,7 @@ export const projects: {
     start_year: string,
     time: string,
     tools: string[];
-}[] = [ /// KURANG TAMBAHIN ADDITIONAL IMAGES YA WAN!
+}[] = [
         {
             name: "My Content",
             url: "my_content",
