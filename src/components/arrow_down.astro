@@ -3,7 +3,12 @@ import { Image } from "astro:assets";
 import down_arrow_image from "../images/down-arrow.webp";
 
 ---
-<Image src={down_arrow_image} alt="Down Arrow Icon" widths={[down_arrow_image.width/2, down_arrow_image.width]} sizes=`(max-width: 550px) ${down_arrow_image.width/2}px, ${down_arrow_image.width}px`` />
+<Image 
+src={down_arrow_image} 
+alt="Down Arrow Icon" 
+width={32}
+widths={[down_arrow_image.width/4, down_arrow_image.width/2, down_arrow_image.width]} 
+sizes={`(max-width: 550px) ${down_arrow_image.width}px, (max-width: 650px) ${down_arrow_image.width/2}px, ${down_arrow_image.width/4}px`} />
 
 <style is:global>
 .down_arrow {
