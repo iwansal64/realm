@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets"
 import profile_picture from "../images/profile-picture.webp";
-import down_arrow_image from "../images/down-arrow.webp";
+import ArrowDown from "./arrow_down.astro";
 
 ---
 <section class="section hero">
@@ -13,13 +13,13 @@ import down_arrow_image from "../images/down-arrow.webp";
             <button class="smooth call_to_action" data-smooth-delay="1000"><a href="#about_me">Find More About Me &RightArrow;</a></button>
         </div>
         <div class="profile_picture">
-            <Image src={profile_picture} alt="profile picture" height={641} class="smooth profile_image" data-smooth-delay="500" />
+            <Image src={profile_picture} alt="profile picture" widths={[profile_picture.width/2, profile_picture.width]} sizes={`(max-width: 550px) ${profile_picture.width/2}px, ${profile_picture.width}px`} class="smooth profile_image" data-smooth-delay="500" />
         </div>
     </div>
     <div class="decoration"></div>
     <div class="down_arrow smooth" data-smooth-delay="1200">
         <a href="#about_me">
-            <Image src={down_arrow_image} alt="down arrow" width={45} fetchpriority="high" />
+            <ArrowDown />
         </a>
     </div>
 </section>

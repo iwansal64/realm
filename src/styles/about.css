@@ -5,17 +5,17 @@ section.about {
 }
 @media (max-width: 1080px) {
   section.about {
-    padding: 150px 300px 150px 300px;
+    padding: 150px 300px;
   }
 }
-@media (max-width: 670px) {
+@media (max-width: 850px) {
   section.about {
-    padding: 100px 150px 100px 150px;
+    padding: 100px 100px;
   }
 }
 @media (max-width: 450px) {
   section.about {
-    padding: 100px 50px 100px 50px;
+    padding: 100px 50px;
   }
 }
 section.about h1 {

@@ -21,29 +21,6 @@
   z-index: 0;
 }
 
-.down_arrow {
-  position: absolute;
-  left: 50%;
-  bottom: 50px;
-  transform: translateX(-50%) !important;
-}
-.down_arrow > a {
-  position: relative;
-  animation-name: down_arrow;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-}
-
-@keyframes down_arrow {
-  0% {
-    opacity: 0.25;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .hero_container {
   position: relative;
   top: 50%;

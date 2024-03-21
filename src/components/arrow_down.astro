@@ -1,0 +1,34 @@
+---
+import { Image } from "astro:assets";
+import down_arrow_image from "../images/down-arrow.webp";
+
+---
+<Image src={down_arrow_image} alt="Down Arrow Icon" widths={[down_arrow_image.width/2, down_arrow_image.width]} sizes=`(max-width: 550px) ${down_arrow_image.width/2}px, ${down_arrow_image.width}px`` />
+
+<style is:global>
+.down_arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%) !important;
+    z-index: 20;
+
+    > a {
+        position: relative;
+        animation-name: down_arrow;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+    }
+}
+
+@keyframes down_arrow {
+    0% {
+        opacity: 0.25;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+</style>
