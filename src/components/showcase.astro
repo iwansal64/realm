@@ -8,7 +8,7 @@ import { projects } from "../typescript/data.ts";
 	<p class="statement">I've already make 3 website projects within 1-2 months to improve my programming skill</p>
     <div class="project_container">
         {projects.map((project) => (
-            <div class="project_content smooth">
+            <div class={"project_content smooth "+project.name.replace(" ", "_")}>
                 <div class="left_side">
                     <h1 class="project_title">{project.name}</h1>
                     <div class="white-br"></div>

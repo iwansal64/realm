@@ -1,0 +1,47 @@
+.navbar:not(.appear) {
+  transform: translateX(-50%) !important;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) !important;
+  width: 100vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-width: 0 0 2px 0;
+  transition: 0.25s background-color, 3s transform, 3s opacity !important;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+.navbar ul a {
+  text-decoration: none;
+  padding: 10px 20px;
+  transition-duration: 0.25s;
+}
+.navbar ul a:hover {
+  background-color: #eee;
+  color: #222;
+}
+@media (max-width: 500px) {
+  .navbar {
+    position: absolute;
+    padding: 0;
+  }
+  .navbar .home {
+    scale: 0.5;
+  }
+}/*# sourceMappingURL=navbar.css.map */

@@ -1,10 +1,10 @@
 .main_wrapper {
-  margin-top: 40px;
-  padding: 0 50px;
+  margin-top: 20px;
+  padding: 100px 50px;
 }
 @media (max-width: 500px) {
   .main_wrapper {
-    padding: 0 20px;
+    padding: 100px 20px;
   }
 }
 
@@ -17,14 +17,14 @@
   grid-template-rows: max-content 1fr;
   place-items: center;
   grid-template-areas: "info image" "details details";
-  padding: 0 200px;
+  padding: 0 300px;
 }
-@media (max-width: 1050px) {
+@media (max-width: 1250px) {
   .upper_layer {
     padding: 0 50px;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 800px) {
   .upper_layer {
     padding: 0;
     grid-template-areas: "info" "image" "details";

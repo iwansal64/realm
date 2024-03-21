@@ -2,13 +2,12 @@
 import type { GetStaticPaths } from "astro";
 import MainLayout from "../../layouts/MainLayout.astro";
 import Footer from "../../components/footer.astro";
-import Home from "../../components/home.astro";
+import Home from "../../components/navbar.astro";
 import { projects } from "../../typescript/data";
 import { Image } from "astro:assets";
 import "../../styles/project_url.css";
 import "../../styles/image_border.css";
 import "../../styles/white_br.css";
-import "../../styles/home.css";
 
 export const getStaticPaths = (() => {
 
@@ -42,27 +41,27 @@ const project = projects.filter((data) =>
                 <div class="white_br smooth" data-smooth-delay="200" />
                 <div class="project_details_container">
                     <div class="tech_stack smooth" data-smooth-delay="200">
-                        <h3>Tech Stack</h3>
+                        <h2>Tech Stack</h2>
                         {project.techstack.map((technology, index) => (
                             <>{(index==0?"":", ")+technology}</>
                         ))}
                     </div>
                     <div class="time smooth" data-smooth-delay="400">
-                        <h3>Time</h3>
+                        <h2>Time</h2>
                         <p>{project.time}</p>
                     </div>
                     <div class="year smooth" data-smooth-delay="600">
-                        <h3>Year</h3>
+                        <h2>Year</h2>
                         <p>{project.start_year}</p>
                     </div>
                     <div class="tools smooth" data-smooth-delay="350">
-                        <h3>Tools</h3>
+                        <h2>Tools</h2>
                         {project.tools.map((tool, index) => (
                             <>{(index==0?"":", ")+tool}</>
                         ))}
                     </div>
                     <div class="core_features smooth" data-smooth-delay="500">
-                        <h3>Core Features</h3>
+                        <h2>Core Features</h2>
                         {project.core_features.map((feature, index) => (
                             <>{(index==0?"":", ")+feature}</>
                         ))}

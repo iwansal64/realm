@@ -75,4 +75,22 @@
 .project_content .project_description {
   width: 100%;
   font-size: 1em;
+}
+
+@media (max-width: 500px) {
+  .project_content.My_Content .image_border span {
+    animation-name: hover_me;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes hover_me {
+    0% {
+      opacity: 0.25;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }/*# sourceMappingURL=showcase.css.map */

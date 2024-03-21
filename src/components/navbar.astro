@@ -1,0 +1,16 @@
+---
+import RealmLogo from "../images/realm-logo.svg";
+import { Image } from "astro:assets";
+import "../styles/navbar.css";
+
+---
+
+<nav class="navbar smooth" data-smooth-delay="100">
+    <a href="/" class="home">
+        <Image src={RealmLogo} alt="Realm Logo" width={100}/>
+    </a>
+    <ul>
+        <li><a href="/#about_me">About Me</a></li>
+        <li><a href="/#showcase">Showcase</a></li>
+    </ul>
+</nav>

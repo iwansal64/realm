@@ -1,20 +1,20 @@
-import MyContents_Image from "../images/projects/My Contents.jpg";
-import MyContents_Image_1 from "../images/projects/My Contents/MyContents_1.jpg";
-import MyContents_Image_2 from "../images/projects/My Contents/MyContents_2.jpg";
-import MyContents_Image_3 from "../images/projects/My Contents/MyContents_3.jpg";
-import MyContents_Image_4 from "../images/projects/My Contents/MyContents_4.jpg";
+import MyContents_Image from "../images/projects/My Contents.webp";
+import MyContents_Image_1 from "../images/projects/My Contents/MyContents_1.webp";
+import MyContents_Image_2 from "../images/projects/My Contents/MyContents_2.webp";
+import MyContents_Image_3 from "../images/projects/My Contents/MyContents_3.webp";
+import MyContents_Image_4 from "../images/projects/My Contents/MyContents_4.webp";
 
-import DeviceMonitoringSystem_Image from "../images/projects/Device Monitoring System.jpg";
-import DeviceMonitoringSystem_Image_1 from "../images/projects/Device Monitoring System/DeviceMonitoringSystem_1.jpg";
-import DeviceMonitoringSystem_Image_2 from "../images/projects/Device Monitoring System/DeviceMonitoringSystem_2.jpg";
-import DeviceMonitoringSystem_Image_3 from "../images/projects/Device Monitoring System/DeviceMonitoringSystem_3.jpg";
-import DeviceMonitoringSystem_Image_4 from "../images/projects/Device Monitoring System/DeviceMonitoringSystem_4.jpg";
+import DeviceMonitoringSystem_Image from "../images/projects/Device Monitoring System.webp";
+import DeviceMonitoringSystem_Image_1 from "../images/projects/Device Monitoring System/DeviceMonitoringSystem_1.webp";
+import DeviceMonitoringSystem_Image_2 from "../images/projects/Device Monitoring System/DeviceMonitoringSystem_2.webp";
+import DeviceMonitoringSystem_Image_3 from "../images/projects/Device Monitoring System/DeviceMonitoringSystem_3.webp";
+import DeviceMonitoringSystem_Image_4 from "../images/projects/Device Monitoring System/DeviceMonitoringSystem_4.webp";
 
-import MitraCheck_Image from "../images/projects/Mitra Check.jpg";
-import MitraCheck_Image_1 from "../images/projects/Mitra Check/MitraCheck_1.jpg";
-import MitraCheck_Image_2 from "../images/projects/Mitra Check/MitraCheck_2.jpg";
-import MitraCheck_Image_3 from "../images/projects/Mitra Check/MitraCheck_3.jpg";
-import MitraCheck_Image_4 from "../images/projects/Mitra Check/MitraCheck_4.jpg";
+import MitraCheck_Image from "../images/projects/Mitra Check.webp";
+import MitraCheck_Image_1 from "../images/projects/Mitra Check/MitraCheck_1.webp";
+import MitraCheck_Image_2 from "../images/projects/Mitra Check/MitraCheck_2.webp";
+import MitraCheck_Image_3 from "../images/projects/Mitra Check/MitraCheck_3.webp";
+import MitraCheck_Image_4 from "../images/projects/Mitra Check/MitraCheck_4.webp";
 
 export const projects: {
     name: string,
