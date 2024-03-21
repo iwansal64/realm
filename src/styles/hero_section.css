@@ -32,10 +32,10 @@
 
 @keyframes down_arrow {
   0% {
-    top: 10px;
+    opacity: 0.25;
   }
   100% {
-    top: -10px;
+    opacity: 1;
   }
 }
 .hero_container {
