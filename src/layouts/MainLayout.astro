@@ -87,6 +87,13 @@ const { title }  = Astro.props;
 		transition: 1.25s;
 	}
 
+	@media (max-width: 600px) {
+		.smooth.appear {
+			transform: translateX(0);
+			transition: 0.75s;
+		}
+	}
+
 	.smooth:not(.appear) {
 		opacity: 0 !important;
 		transform: translateX(-10%) !important;
