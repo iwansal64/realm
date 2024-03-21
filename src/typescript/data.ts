@@ -29,7 +29,7 @@ export const projects: {
     start_year: string,
     time: string,
     tools: string[];
-}[] = [ /// KURANG TAMBAHIN ADDITIONAL IMAGES YA WAN!
+}[] = [
         {
             name: "My Content",
             url: "my_content",
@@ -99,7 +99,7 @@ export const projects: {
                 "Prisma"
             ],
             desc: "Mitra Check is a website that i built for Mitra Industri Vocational Highschool. It's a presency monitoring website that track students presency",
-            full_desc: "A website that i build for school. It's a students attendance monitoring website that i built with Next.JS + MongoDB + Prisma. It has some features that help tracking students like seeing who are presence/absence to the class, seeing how many presence a student has in one week. And it's integrated with webhooks that connected to my another project called online presency device that can detects and reads an id card and update that student data on database that match the id card.",
+            full_desc: "A website that i build for Mitra Industri Vocational Highschool. It's a students attendance monitoring website that i built with Next.JS + MongoDB + Prisma. It has some features that help tracking students like seeing who are presence/absence to the class, seeing how many presence a student has in one week. And it's integrated with webhooks that connected to my another project called online presency device that can detects and reads an id card and update that student data on database that match the id card.",
             main_image: MitraCheck_Image,
             image_alt: "Mitra Check Image",
             core_features: [
