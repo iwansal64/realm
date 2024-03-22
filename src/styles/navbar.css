@@ -32,9 +32,11 @@
   padding: 10px 20px;
   transition-duration: 0.25s;
 }
-.navbar ul a:hover {
-  background-color: #eee;
-  color: #222;
+@media (min-width: 550px) {
+  .navbar ul a:hover {
+    background-color: #eee;
+    color: #222;
+  }
 }
 @media (max-width: 500px) {
   .navbar {

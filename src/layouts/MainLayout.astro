@@ -15,6 +15,9 @@ const { title }  = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
         <meta name="description" content="Ridwan Bagoes Setiawan Profile Website">
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; img-src 'self'; style-src 'unsafe-inline'; ">
+		<meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'; img-src 'self'; style-src 'unsafe-inline'; ">
+		<meta http-equiv="X-WebKit-CSP" content="default-src 'self'; script-src 'self'; img-src 'self'; style-src 'unsafe-inline'; ">
 		<link rel="shortcut icon" href="/realm-logo-blk.webp" type="image/x-icon">
 		<title>{title}</title>
 	</head>
@@ -24,7 +27,7 @@ const { title }  = Astro.props;
 	</body>
 </html>
 
-<style is:global>
+<style is:global nonce="rAnd0m">
 	@font-face {
 		font-family: fira code;
 		src: url("../fonts/Fira_Code/static/FiraCode-Light.ttf"),
