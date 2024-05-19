@@ -74,7 +74,12 @@
   background-color: #305;
   border: 2px solid #509;
   transition: 0.15s background-color, 1.25s opacity, 1.25s transform;
-  padding: 5px;
+  padding: 10px 30px;
+}
+@media (max-width: 500px) {
+  .hero_container .profile_info .call_to_action {
+    padding: 7px 20px;
+  }
 }
 .hero_container .profile_info .call_to_action a {
   text-decoration: none;
