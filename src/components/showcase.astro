@@ -5,7 +5,7 @@ import { projects } from "../typescript/data.ts";
 ---
 
 <section class="section project" id="showcase">
-	<p class="statement">I've already make 3 website projects (and this website) within 1-2 months to improve my programming skill</p>
+	<p class="statement">I've already made 3 website projects (and this website) within 1-2 months in order to improve my programming skill</p>
     <div class="project_container">
         {projects.map((project) => (
             <div class={"project_content smooth "+project.name.replace(" ", "_")}>
@@ -20,7 +20,7 @@ import { projects } from "../typescript/data.ts";
                     <a href={`/projects/${project.url}`} class="project_link">
                         <Image src={project.main_image} alt={project.image_alt} fetchpriority="low" height="350" />
                     </a>
-                    <span>Click To Learn More..</span>
+                    <span style="pointer-events: none;">Click To Learn More..</span>
                 </div>
             </div>
         ))}

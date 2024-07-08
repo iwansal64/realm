@@ -39,8 +39,8 @@ export const projects: {
                 "MongoDB",
                 "React"
             ],
-            desc: "A media social website that i built with some core features like another media socials have",
-            full_desc: "An online social media website created with Next.JS + MongoDB. It has some core features like create post, see another users posts, delete post, like post, sign up/log in system, add/remove friend and others. It's a fun project! It improves my coding skills so much!",
+            desc: "A website for sharing information through articles",
+            full_desc: "An online article sharing website created with Next.JS + MongoDB. It has some core features like post article, see another users article, delete an article, like an article, sign up/log in system, add/remove friend and others. It's a fun project! It improves my coding skill so much!",
             main_image: MyContents_Image,
             image_alt: "My Contents Image",
             core_features: [
@@ -99,7 +99,7 @@ export const projects: {
                 "Prisma"
             ],
             desc: "Mitra Check is a website that i built for Mitra Industri Vocational Highschool. It's a presency monitoring website that track students presency",
-            full_desc: "A website that i build for Mitra Industri Vocational Highschool. It's a students attendance monitoring website that i built with Next.JS + MongoDB + Prisma. It has some features that help tracking students like seeing who are presence/absence to the class, seeing how many presence a student has in one week. And it's integrated with webhooks that connected to my another project called online presency device that can detects and reads an id card and update that student data on database that match the id card.",
+            full_desc: "A website that i build for Mitra Industri Vocational Highschool. It's a students attendance monitoring website that i built with Next.JS + MongoDB + Prisma. It has some features that help tracking students like seeing who are presence/absence to the class, seeing how many presence a student has in one week. And it's integrated to a webhook that i set by myself and it's connected to my another project called online presency device that can detects and reads an id card and update that student data on database that match the id card.",
             main_image: MitraCheck_Image,
             image_alt: "Mitra Check Image",
             core_features: [
